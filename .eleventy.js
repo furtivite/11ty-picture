@@ -33,6 +33,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
   eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+  eleventyConfig.addPassthroughCopy("css");
   
   return {
     dir: {
